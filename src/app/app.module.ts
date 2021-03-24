@@ -3,10 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { Sidebar2Component } from './sidebar2/sidebar2.component';
+import { SamplePageOneComponent } from './sample-page-one/sample-page-one.component';
+import { SamplePageTwoComponent } from './sample-page-two/sample-page-two.component';
+import { SamplePageThreeComponent } from './sample-page-three/sample-page-three.component';
+import { SamplePageFourComponent } from './sample-page-four/sample-page-four.component';
+import { SamplePageFiveComponent } from './sample-page-five/sample-page-five.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    SidebarComponent,
+    Sidebar2Component,
+    SamplePageOneComponent,
+    SamplePageTwoComponent,
+    SamplePageThreeComponent,
+    SamplePageFourComponent,
+    SamplePageFiveComponent
   ],
   imports: [
     BrowserModule,
