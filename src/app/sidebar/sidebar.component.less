@@ -1,5 +1,6 @@
 #sidebar{
-  position: absolute;
+  //position: absolute;
+  position: fixed;
   width: 150px;
   height: 100%;
   background: #1c2b36;
@@ -57,11 +58,13 @@
   text-decoration: none;
   display: block;
 }
+
 #sidebar{
   ul{
     .cont{
       border-bottom:0.5px solid #243a49;
       font-size: 10px;
+      padding-bottom: 10px;
     .item{
       display: flex;
       height: 27px;
@@ -98,17 +101,77 @@
       border: 2.25px solid #585629;
       }
   .circle_3{
-  height: 14px;
-  width: 14px;
-  background: #00bff3;
-  border-radius: 50%;
-  border: 2.25px solid #15576b;
+      height: 14px;
+      width: 14px;
+      background: #00bff3;
+      border-radius: 50%;
+      border: 2.25px solid #15576b;
+      margin-left: 17px;
       }
     }
+
   }
 }
 #sidebar {
   a{
     text-decoration: none;
+    display: none;
+  }
+}
+.page-container{
+  display: flex;
+  height: 100%;
+  weigth:100%;
+}
+#sidebar{
+  .mail{
+    display: flex;
+    height: 30px;
+    justify-content:space-between;
+    align-items: center;
+    font-size: 10px;
+  .t{
+    margin-left: 15px;
+    color: #c1daec;
+  }
+  .progress{
+    margin-right: 15px;
+    margin-left: 15px;
+     color: #c1daec;
+  }
+}
+.meter_2 {
+  width: 80%;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  height: 3.5px;
+  position: relative;
+  background: #111a21;
+  -moz-border-radius: 30px;
+  -webkit-border-radius:30px;
+  border-radius: 50px;
+  -webkit-box-shadow: inset 0 -0.75px 0.75px rgba(255,255,255,0.3);
+  -moz-box-shadow   : inset 0 -0.75px 0.75px rgba(255,255,255,0.3);
+  box-shadow        : inset 0 -0.75px 0.75px rgba(255,255,255,0.3);
+    span{
+     width: 70%;
+     display: block;
+     height: 100%;
+     -webkit-border-top-right-radius: 37.5px;
+     -webkit-border-bottom-right-radius: 37.5px;
+     border-top-left-radius: 37.5px;
+     border-bottom-left-radius: 37.5px;
+     background-color: #00aeef;
+     position: relative;
+     overflow: hidden;
+    }
+  }
+}
+#sidebar{
+  .page-content-container{
+    width: 100%;
+    margin-top: 43.5px;
+    margin-left: 150px;
+    margin-right: 157.5px;
   }
 }
