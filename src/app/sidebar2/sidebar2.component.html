@@ -1,2 +1,33 @@
   <div id="sidebar2">
+    <div class="head">
+            <div class="item_1">
+              <a class="mdl-navigation__link" href="#">
+                <i class="material-icons ">{{icons[0]}}
+                </i>
+              </a>
+            </div>
+            <div class="item_1">
+              <a class="mdl-navigation__link" href="#">
+                <i class="material-icons">{{icons[1]}}
+                </i>
+              </a>
+            </div>
+            <div class="item_1">
+              <a class="mdl-navigation__link" href="#">
+                <i class="material-icons">{{icons[2]}}
+                </i>
+              </a>
+            </div>
+         </div>
+         <div class="cont_1">
+           <p>Who to follow</p>
+              <div class="users">
+                <ul>
+                  <app-user
+                    *ngFor="let user of users"
+                    [user]="user"
+                  ></app-user>
+                </ul>
+              </div>
+         </div>
     </div>

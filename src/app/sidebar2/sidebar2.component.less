@@ -1,15 +1,53 @@
 #sidebar2{
   font-size: 9px;
-  //position: absolute;
   position: fixed;
   width:157.5px;
   margin-right: 0px;
   height: calc(100% - 42px);
   background:#ffffff;
-  //margin-right: 11.25px;
   right:0;
   margin-top: 43.5px;
   border-left: 1.5px solid #e1e1e1;
   border-top: 0.75px solid #e1e1e1;
   margin-right:0px;
+  .head{
+    height: 60px;
+    background:#ffffff;
+    width: 100%;
+    border-bottom: 0.75px solid #cbcbcb;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .item_1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    i.material-icons{
+      font-size: 13.8px;
+      color: #cbcbcb;
+    }
+    .item_1 i.material-icons:hover{
+        color:#555;
+    }
+    .item_1:hover{
+      border-bottom: solid 1.5px #555;
+    }
+  }
+  .cont_1{
+    height: 320px;
+    border-bottom: 0.75px solid #e1e1e1;
+    p{
+      font-size: 10.5px;
+      color:#555;
+      margin-left:20px;
+      margin-top: 26.75px;
+      margin-bottom: 15px;
+    }
+    .users{
+      ul{
+        padding-left: 20px;
+      }
+    }
+
+  }
 }

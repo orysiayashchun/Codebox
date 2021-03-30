@@ -11,6 +11,7 @@ import { SamplePageTwoComponent } from './sample-page-two/sample-page-two.compon
 import { SamplePageThreeComponent } from './sample-page-three/sample-page-three.component';
 import { SamplePageFourComponent } from './sample-page-four/sample-page-four.component';
 import { SamplePageFiveComponent } from './sample-page-five/sample-page-five.component';
+import { UserComponent } from './sidebar2/user/user.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SamplePageFiveComponent } from './sample-page-five/sample-page-five.com
     SamplePageThreeComponent,
     SamplePageFourComponent,
     SamplePageFiveComponent,
-    SelectComponent
+    SelectComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
