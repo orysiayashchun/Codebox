@@ -12,6 +12,7 @@ import { SamplePageThreeComponent } from './sample-page-three/sample-page-three.
 import { SamplePageFourComponent } from './sample-page-four/sample-page-four.component';
 import { SamplePageFiveComponent } from './sample-page-five/sample-page-five.component';
 import { UserComponent } from './sidebar2/user/user.component';
+import { ButtonComponent } from './sidebar2/button/button.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { UserComponent } from './sidebar2/user/user.component';
     SamplePageFourComponent,
     SamplePageFiveComponent,
     SelectComponent,
-    UserComponent
+    UserComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

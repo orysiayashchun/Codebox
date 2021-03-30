@@ -14,7 +14,7 @@ export class Sidebar2Component implements OnInit {
     {photo:"avar_4",state:'#53bf61',name:'Mogen Polish',prof:'Musician'},
     {photo:"avar_5",state:'#d4d4d4',name:'Mogen Polish',prof:'Designer, UI'}
   ];
-  s="/assets/img/";
+
   constructor() { }
 
   ngOnInit(): void {

@@ -1,0 +1,9 @@
+<div *ngIf="!isCollapsed">
+  <app-user
+    *ngFor="let user of hiddenUsers"
+    [user]="user"
+  ></app-user>
+</div>
+
+<button *ngIf="isCollapsed" (click)="toggleCollapse()">More Connections</button>
+<button *ngIf="!isCollapsed" (click)="toggleCollapse()">Fewer Connections</button>
