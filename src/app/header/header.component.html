@@ -10,32 +10,23 @@
         {{icons[1]}}
       </i>
     </a>
-  <!--  <div class ="menu__list">
-       <form name"1">
-          <select name="language" size="1"  style="border-color:#ffffff">
-             <option select value="New">New
-             <option select value="Next">Next
-             <option select value="Next">Next
-             <option select value="Next">Next
-          </select>
-       </form>
-    </div  >
-    <div class ="menu__list">
-       <form name"1">
-          <select name="language" size="1"  style="border-color:#ffffff">
-             <option select value="Mega">Mega
-             <option select value="Next">Next
-             <option select value="Next">Next
-             <option select value="Next">Next
-          </select>
-       </form>
-    </div>-->
+    <app-select
+    style="width:47px;"
+    *ngFor="let s of selects"
+    [s]="s"
+    ></app-select>
+
     <div  class="radius">
        <input type="text" id="text" placeholder="Search projects.....">
         <i class="material-icons">{{icons[2]}}</i>
     </div>
   </div>
   <div class="head_last">
+    <app-select
+    style="width:57px;"
+    *ngFor="let s of english"
+    [s]="s"
+    ></app-select>
     <div class="head_icon">
       <a class="mdl-navigation__link" href="#">
         <i class="material-icons" >
@@ -56,6 +47,11 @@
          <p>2</p>
     </div>
    </div>
+   <app-select
+   style="width:75px;"
+   *ngFor="let s of users"
+   [s]="s"
+   ></app-select>
     <div class="block">
         <embed class="im " src="/assets/img/avar_1.svg" alt="myImage">
        <div class="call"></div>
