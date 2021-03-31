@@ -13,6 +13,7 @@ import { SamplePageFourComponent } from './sample-page-four/sample-page-four.com
 import { SamplePageFiveComponent } from './sample-page-five/sample-page-five.component';
 import { UserComponent } from './sidebar2/user/user.component';
 import { ButtonComponent } from './sidebar2/button/button.component';
+import { TodoComponent } from './sidebar2/todo/todo.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ButtonComponent } from './sidebar2/button/button.component';
     SamplePageFiveComponent,
     SelectComponent,
     UserComponent,
-    ButtonComponent
+    ButtonComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,

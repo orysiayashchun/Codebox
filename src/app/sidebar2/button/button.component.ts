@@ -11,7 +11,7 @@ export class ButtonComponent implements OnInit {
     this.isCollapsed=!this.isCollapsed;
   }
   hiddenUsers=[
-    {photo:"avar_1",state:'#9777a8',name:'Amelia Nelson',prof:'UI Graphic'},
+    {photo:"avar_6.png",state:'#9777a8',name:'Amelia Nelson',prof:'UI Graphic'},
   ];
   constructor() { }
 
