@@ -8,7 +8,12 @@ import { Component, OnInit ,Input} from '@angular/core';
 export class TodoComponent implements OnInit {
   @Input() toDo;
   constructor() { }
-
+  isChecked:boolean=true;
+  numberOfChecked=0
+  AddNumberOfChecked(){
+   this.numberOfChecked+=1;
+   console.log(this.numberOfChecked);
+  }
   ngOnInit(): void {
   }
 

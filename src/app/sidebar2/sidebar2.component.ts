@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input,} from '@angular/core';
 
 @Component({
   selector: 'app-sidebar2',
@@ -19,6 +19,17 @@ export class Sidebar2Component implements OnInit {
   {do:'Design One page theme',check:'3'},
   {do:'Build a js based app',check:'4'},
   {do:'Responsive design for',check:'5'}];
+  //@ViewChild(TodoComponent)
+  //numberOfChecked=0: TodoComponent;
+  isAdded:boolean=true;
+
+  numberOfChecked=0;
+  currentVal="";
+  getVal(val){
+    console.warn(val);
+    this.currentVal=val;
+    this.isAdded=!this.isAdded;
+  }
   ngOnInit(): void {
   }
 

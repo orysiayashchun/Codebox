@@ -32,13 +32,25 @@
         </div>
    </div>
    <div class="cont_2">
-     <p>Todo list</p>
+     <p class="p_1">Todo list</p>
+     <p class="p_2">{{numberOfChecked}} of 5 remaining</p>
      <div class="box">
        <ul>
          <app-todo
          *ngFor="let toDo of toDoList"
          [toDo]="toDo"
          ></app-todo>
+         <div *ngIf="!isAdded" class="checkbox">
+          <input class="checkbox__input"
+             type="checkbox" id="checkbox_6"/>
+           <label class="checkbox__label" for="checkbox_6">{{currentVal}}
+           </label>
+           </div>
+           <div class="add_task">
+             <input value="Add new todo" #box />
+             <button *ngIf="isAdded"  (click)="getVal(box.value)">Add</button>
+             <button *ngIf="!isAdded"  (click)="getVal(box.value)">-</button>
+           </div>
        </ul>
      </div>
    </div>

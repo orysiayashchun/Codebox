@@ -1,5 +1,5 @@
 <div class="checkbox">
- <input class="checkbox__input"
+ <input *ngIf="isChecked" (click)="AddNumberOfChecked()" class="checkbox__input"
     type="checkbox" id="checkbox_{{toDo.check}}"/>
   <label class="checkbox__label" for="checkbox_{{toDo.check}}">{{toDo.do}}
   </label>

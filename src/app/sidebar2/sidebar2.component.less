@@ -1,6 +1,8 @@
 #sidebar2{
+  //overflow:auto;
   font-size: 9px;
-  position: fixed;
+  //position: fixed;
+  float:right;
   width:170px;
   margin-right: 0px;
   height: calc(100% - 42px);
@@ -50,17 +52,109 @@
     }
   }
   .cont_2{
-    p{
+    p.p_1{
       font-size: 10.5px;
       color:#555;
       margin-left:20px;
       margin-top: 26.75px;
       margin-bottom: 15px;
     }
+    p.p_2{
+      font-size: 10px;
+      color:#b5b5b5;
+      margin-left:20px;
+      padding-top: 5px;
+    }
     .box{
       ul{
         padding-left: 20px;
       }
     }
+  }
+}
+
+.checkbox__input{
+  -webkit-appearance: none;
+  appearance:none;
+  position: absolute;
+}
+
+.checkbox__label{
+  padding-left: 10px;
+  font-size: 10px;
+  margin-left: 10px;
+  display:inline-block;
+  margin-top: 7px;
+}
+
+.checkbox__label:before{
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 0.5px solid #e4e4e4;
+  background-color: #fff;
+  position: absolute;
+  top:0;
+  left: 0.3px;
+  z-index:1;
+  border-radius: 3px;
+}
+
+.checkbox__label:after{
+  content: "";
+  width:10px;
+  height: 10px;
+  background-size: 10px 10px;
+  background: url("/assets/img/check.png") no-repeat;
+  opacity: 0;
+  position: absolute;
+  top:2px;
+  left:0;
+  z-index:2;
+  transition: opacity .1s linear;
+}
+
+.checkbox__input:checked+ .checkbox__label:before{
+  background-color: #0072bc;
+  border-color: #0072bc;
+}
+.checkbox__input:checked+ .checkbox__label:after{
+  opacity: 1;
+}
+.checkbox{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.add_task{
+  display: flex;
+  input{
+    font-size: 9px;
+    height: 20px;
+    width: 82px;
+    border-radius: 1px;
+    background-color: #fcfcfc;
+    border: 0.5px solid #e1e1e1;
+    color:#acacac;
+    padding-left: 10px;
+    outline: none;
+  }
+  input:active{
+  outline: none;
+  }
+  button{
+    background-color: #1d89cf;
+    border:none;
+    color:#fff;
+    font-size: 9px;
+    width: 35px;
+  }
+  button:active{
+  outline: none;
   }
 }
