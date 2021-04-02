@@ -1,23 +1,16 @@
 #sidebar{
   //position: absolute;
   position: fixed;
+  //float:left;
   width: 150px;
   height: 100%;
   background: #1c2b36;
   ul:first-child {
     margin: 0;
     padding-left: 0px;
-    li:first-child {
-      color: #ffffff;
-      font-size: 10.5px;
-      list-style: none;
-      padding: 11.25px 30px 8px 0px;
-      margin: 0;
-      font-family: loto;
-      left: 0;
-      embed{
-        height: 23px;
-      }
+    embed{
+      height: 23px;
+    margin: 11.25px 30px 8px 14px;
     }
     .navig{
       display: flex;
@@ -30,29 +23,14 @@
         color: #5f7787;
       }
     }
-
   }
   p{
   text-align:center;
   color:#fff;
   transform: translateY(-2px);
+  }
+}
 
-  }
-}
-#sidebar ul li:not(first-child){
-  text-align: center;
-  font-size:10.5px;
-  list-style: none;
-  font-family: loto;
-  align-content:center;
-  left: 11.25px;
-  i{
-    margin-top: 3.75px;
-    transform: scale(0.525);
-    width: 10.5px;
-    height: 9px;
-  }
-}
 #sidebar ul li a{
   color:#c1daec;
   text-decoration: none;
@@ -109,9 +87,9 @@
       margin-left: 17px;
       }
     }
-
   }
 }
+
 #sidebar {
   a{
     text-decoration: none;
@@ -172,3 +150,27 @@
     margin-top: 43.5px;
     margin-left: 150px;
   }
+  ul ul{
+    background: #1c2b36;
+    position: absolute;
+    right: -70px;
+    display: none;
+    margin: 0;
+    width: 70px;
+    padding-left: 0px;
+    transform: translateY(-27px);
+    //top:20px;
+    li{
+      list-style-type: none;
+      border-bottom: 0.25px solid #243a49;
+      a{
+        font-size: 8px;
+        color: #fff;
+        left: 0;
+        padding-left: 14px;
+      }
+    }
+  }
+li:hover>ul{
+  display: block;
+}
