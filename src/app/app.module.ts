@@ -14,6 +14,7 @@ import { SamplePageFiveComponent } from './sample-page-five/sample-page-five.com
 import { UserComponent } from './sidebar2/user/user.component';
 import { ButtonComponent } from './sidebar2/button/button.component';
 import { TodoComponent } from './sidebar2/todo/todo.component';
+import { MembersComponent } from './sample-page-one/members/members.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { TodoComponent } from './sidebar2/todo/todo.component';
     SelectComponent,
     UserComponent,
     ButtonComponent,
-    TodoComponent
+    TodoComponent,
+    MembersComponent
   ],
   imports: [
     BrowserModule,

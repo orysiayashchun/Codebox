@@ -5,7 +5,7 @@
   </div>
   <div class="mdc-layout-grid__inner">
      <div class="mdc-layout-grid__cell--span-12">
-        <div class="grid_7">
+        <div class="grid">
            <div class="feedbacks">
               <p class="p3">1349</p>
               <p class="p4">NEW FEEDBACKS</p>
@@ -35,7 +35,14 @@
      </div>
   </div>
   <div class="mdc-layout-grid__inner-2">
-    <div class="mdc-layout-grid__cell--span-5">
+    <div class="grid_1">
+      <div class="analysis">
+      </div>
+        <div class="statistics">
+
+        </div>
+    </div>
+    <!--<div class="mdc-layout-grid__cell--span-5">
       <div class="mdc-layout-grid__inner-3">
         <div class="mdc-layout-grid__cell--span-12">
           <div class="mdc-layout-grid__inner-4">
@@ -50,6 +57,49 @@
     </div>
    <div class="mdc-layout-grid__cell--span-7">
 
-   </div>
+   </div>-->
     </div>
+    <div class="mdc-layout-grid__inner-3">
+      <div class="grid_2">
+        <div class="members">
+          <div class="head">
+            <p>Members</p>
+            <button>35</button>
+          </div>
+          <div class="users">
+            <ul>
+              <app-members
+                *ngFor="let member of members"
+                [member]="member"
+              ></app-members>
+              </ul>
+              </div>
+        </div>
+          <div class="tasks">
+            <div class="head">
+              <p>Tasks</p>
+              <button>
+                <a class="mdl-navigation__link" href="#">
+                  <i  class="material-icons" >
+                   more_vert
+                 </i>
+               </a>
+              </button>
+            </div>
+
+          </div>
+          <div class="activity">
+            <div class="head">
+              <p>Activity</p>
+              <button>16</button>
+            </div>
+          </div>
+      </div>
+      </div>
+      <div class="mdc-layout-grid__inner-4">
+        <div class="grid_3">
+          <div class="services">
+          </div>
+
+        </div>
 </div>

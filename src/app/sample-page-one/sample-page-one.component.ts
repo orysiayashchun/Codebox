@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sample-page-one.component.less']
 })
 export class SamplePageOneComponent implements OnInit {
-
+  members=[
+    {photo:'members_1.png',state:'#39b54a',name:'Amelia Nelson',prof:'UI Graphic'},
+    {photo:'members_2.png',state:'#39b54a',name:'Alyssa Molligan',prof:'Art director, Movie Cut'},
+    {photo:'members_3.png',state:'#39b54a',name:'Kaitlyn Eddington',prof:'Writter, Mag Editor'},
+    {photo:'members_4.png',state:'#39b54a',name:'Aaron Page',prof:'Designer, Blogger'},
+    {photo:'members_5.png',state:'#a9a9a9',name:'Erin Macey',prof:'Writter, Mag Editor'}
+  ];
   constructor() { }
 
   ngOnInit(): void {

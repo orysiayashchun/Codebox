@@ -21,7 +21,7 @@
       }
     }
   .mdc-layout-grid__inner{
-    .grid_7{
+    .grid{
       background: #f0f3f4;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -80,22 +80,150 @@
   }
   .mdc-layout-grid__inner-2{
     margin-top: 22.5px;
-    height: 318.75px;
     margin-left: 15px;
     margin-right: 15px;
-    .mdc-layout-grid__inner-3{
-      background: #fff;
+    .grid_1{
       height: 318.75px;
-      .mdc-layout-grid__inner-4{
-        height: 25.5px;
-        p.analysis{
-        margin-top: 18.75px;
-        color: #656565;
-        font-size: 13.5px;
-        margin-left: 18.75px;
-        //font-family: Myriad Pro;
-        }
+      display: grid;
+      grid-template-columns: 1.975fr 3.025fr;
+      grid-gap:22.5px;
+      .analysis{
+        background: #fff;
+      }
+      .statistics{
+        background: #fff;
       }
     }
+
   }
+  .mdc-layout-grid__inner-3{
+    margin-top: 22.5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    .grid_2{
+      height: 355.5px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap:22.5px;
+      .members{
+        background: #fff;
+        .head{
+          height: 30px;
+          border-bottom: 0.5px solid #ebebeb;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          p{
+            font-size: 12px;
+            font-weight: bold;
+            color:#555;
+            padding-left: 15px;
+          }
+          button{
+            cursor: pointer;
+            margin-right: 15px;
+            background-color: #88c057;
+            border: none;
+            color: #fff;
+            padding: 4px;
+            height: 15px;
+            width: 18px;
+            border-radius: 2px;
+            font-size: 8px;
+          }
+        }
+        .users{
+          ul{
+              padding-left: 15px;
+          }
+        }
+      }
+      .tasks{
+        background: #fff;
+        .head{
+          height: 30px;
+          border-bottom: 0.5px solid #ebebeb;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          p{
+            font-size: 12px;
+            font-weight: bold;
+            color:#555;
+            padding-left: 15px;
+          }
+          button{
+            cursor: pointer;
+            border: none;
+            margin-right: 15px;
+            background-color: #fff;
+            border: none;
+            color: #fff;
+            padding: 4px;
+            height: 15px;
+            width: 18px;
+            border-radius: 2px;
+            font-size: 8px;
+            i.material-icons{
+              font-size: 13.8px;
+              margin-right: 25.5px;
+              color:#555555;
+            }
+          }
+        }
+      }
+      .activity{
+          background: #fff;
+          .head{
+            height: 30px;
+            border-bottom: 0.5px solid #ebebeb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            p{
+              font-size: 12px;
+              font-weight: bold;
+              color:#555;
+              padding-left: 15px;
+            }
+            button{
+              cursor: pointer;
+              margin-right: 15px;
+              background-color: #48a0dc;
+              border: none;
+              color: #fff;
+              padding: 4px;
+              height: 15px;
+              width: 18px;
+              border-radius: 2px;
+              font-size: 8px;
+            }
+          }
+      }
+    }
+
+  }
+  .mdc-layout-grid__inner-4{
+    margin-top: 22.5px;
+    margin-bottom: 22.5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    .grid_3{
+      height: 460.5px;
+      display: grid;
+      grid-template-columns: 1fr;
+      //grid-gap:22.5px;
+      .services{
+        background: #fff;
+      }
+
+    }
+
+  }
+}
+button:active{
+  outline: none;
 }

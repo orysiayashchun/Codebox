@@ -8,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class SidebarComponent implements OnInit {
 
   constructor() { }
-
+  showMe:boolean=true;
   ngOnInit(): void {
+  }
+  toggleSidebar(){
+    this.showMe=!this.showMe;
   }
 
 }

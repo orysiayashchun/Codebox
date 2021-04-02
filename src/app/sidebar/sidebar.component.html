@@ -1,5 +1,17 @@
 <div class="page-container">
-  <div id="sidebar">
+  <!--<a (click)="toggleSidebar()" class="mdl-navigation__link" href="#">
+    <i  class="material-icons" >
+     format_indent_decrease
+   </i>
+ </a>-->
+ <button (click)="toggleSidebar()" >
+   <a class="mdl-navigation__link" href="#">
+     <i  class="material-icons" >
+      format_indent_decrease
+    </i>
+  </a>
+ </button>
+  <div *ngIf="showMe" id="sidebar">
    <ul>
     <embed  src="/assets/img/Logo.svg" alt="myImage">
       <div class="navig">
