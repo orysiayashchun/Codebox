@@ -30,10 +30,10 @@
       padding-right: 15px;
       height: 82.5px;
       p.p3{
-          font-size: 26px;
-            text-align: center;
-            color:#fff;
-            padding-top: 8px;
+        font-size: 26px;
+        text-align: center;
+        color:#fff;
+        padding-top: 8px;
       }
       p.p4{
         margin-top: -5px;
@@ -94,7 +94,6 @@
         background: #fff;
       }
     }
-
   }
   .mdc-layout-grid__inner-3{
     margin-top: 22.5px;
@@ -173,6 +172,70 @@
             }
           }
         }
+        .task_main{
+          display: grid;
+          grid-template-columns: 1fr 5.5fr;
+          height: 325.5px;
+          .icons{
+
+          }
+          .visiting{
+            .users_visiting{
+              padding-top: 20px;
+              height: 50px;
+              border-bottom: 0.25px solid #f4f4f4;
+              p.p_1{
+                font-size: 10px;
+                color: #555;
+              }
+              .schedule{
+                display: flex;
+                text-align: center;
+                align-items: center;
+                p.p_2{
+                  font-size: 10px;
+                  color: #cacaca;
+                }
+                i.material-icons{
+                  font-size: 13.8px;
+                  margin-right: 7px;
+                  color:#b5b5b5;
+                }
+              }
+            }
+            .tasks_last{
+                padding-top: 20px;
+              p.p_1{
+                font-size: 10px;
+                color: #555;
+              }
+              p.p_2{
+                font-size: 10px;
+                color: #cacaca;
+              }
+              .schedule{
+                display: flex;
+                text-align: center;
+                align-items: center;
+                p.p_2{
+                  font-size: 10px;
+                  color: #cacaca;
+                }
+                i.material-icons{
+                  font-size: 13.8px;
+                  margin-right: 7px;
+                  color:#b5b5b5;
+                }
+              }
+              .tasks_p{
+                display: flex;
+                img{
+                  padding: 5px;
+                }
+              }
+            }
+          }
+        }
       }
       .activity{
           background: #fff;
@@ -212,18 +275,35 @@
     margin-left: 15px;
     margin-right: 15px;
     .grid_3{
-      height: 460.5px;
+      height: 251px;
       display: grid;
       grid-template-columns: 1fr;
       //grid-gap:22.5px;
       .services{
         background: #fff;
       }
-
     }
-
+  }
+  .mdc-layout-grid__inner-5{
+    margin-top: 22.5px;
+    margin-bottom: 22.5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    .grid_4{
+      height: 460.5px;
+      display: grid;
+      grid-template-columns: 1fr;
+      //grid-gap:22.5px;
+      .responsive_table{
+        background: #fff;
+      }
+    }
   }
 }
 button:active{
   outline: none;
+}
+.im{
+  width: 36px;
+  height: 36px;
 }

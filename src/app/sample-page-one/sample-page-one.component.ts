@@ -13,6 +13,9 @@ export class SamplePageOneComponent implements OnInit {
     {photo:'members_4.png',state:'#39b54a',name:'Aaron Page',prof:'Designer, Blogger'},
     {photo:'members_5.png',state:'#a9a9a9',name:'Erin Macey',prof:'Writter, Mag Editor'}
   ];
+  tasks_photo=[
+    'tasks_1.png','tasks_2.png','tasks_3.png','tasks_4.png','tasks_5.png'
+  ]
   constructor() { }
 
   ngOnInit(): void {
