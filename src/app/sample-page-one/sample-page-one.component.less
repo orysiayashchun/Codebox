@@ -177,6 +177,31 @@
           grid-template-columns: 1fr 5.5fr;
           height: 325.5px;
           .icons{
+            display: flex;
+            .line{
+              position: absolute;
+              width: 0px;
+              margin-left: 23px;
+              height: 220px;
+              border-left: 0.25px solid #ececec;
+              margin-top: 26px;
+            }
+            .tasks_icon{
+              position: relative;
+              border-radius: 50%;
+              height: 16px;
+              width: 16px;
+              align-items: center;
+              text-align: center;
+              margin-top: 25px;
+              margin-bottom: 55px;
+              margin-left: 15px;
+              i.material-icons{
+                font-size: 9px;
+                padding-top: 3px;
+                color:#fff;
+              }
+            }
 
           }
           .visiting{
@@ -184,6 +209,7 @@
               padding-top: 20px;
               height: 50px;
               border-bottom: 0.25px solid #f4f4f4;
+
               p.p_1{
                 font-size: 10px;
                 color: #555;
@@ -228,9 +254,13 @@
                 }
               }
               .tasks_p{
-                display: flex;
+                //height: 20%;
+                padding-right: 30px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
                 img{
-                  padding: 5px;
+                  //padding: 5px;
+                  height:40px;
                 }
               }
             }
@@ -304,6 +334,20 @@ button:active{
   outline: none;
 }
 .im{
-  width: 36px;
-  height: 36px;
+  //width: 36px;
+  //height: 36px;
+}
+.text{
+  display: flex;
+  p.p_1{
+    font-size: 10px;
+    color: #555;
+    padding-right: 3px;
+  }
+  p.p_2{
+    font-size: 10px;
+    color: #cacaca;
+    padding-right: 3px;
+  }
+
 }

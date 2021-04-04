@@ -42,22 +42,6 @@
 
         </div>
     </div>
-    <!--<div class="mdc-layout-grid__cell--span-5">
-      <div class="mdc-layout-grid__inner-3">
-        <div class="mdc-layout-grid__cell--span-12">
-          <div class="mdc-layout-grid__inner-4">
-            <div class="mdc-layout-grid__cell--span-4">
-              <p class="analysis">Analysis</p>
-            </div>
-            <div class="mdc-layout-grid__cell--span-4"></div>
-            <div class="mdc-layout-grid__cell--span-4"></div>
-            </div>
-          </div>
-        </div>
-    </div>
-   <div class="mdc-layout-grid__cell--span-7">
-
-   </div>-->
     </div>
     <div class="mdc-layout-grid__inner-3">
       <div class="grid_2">
@@ -88,11 +72,25 @@
             </div>
             <div class="task_main">
               <div class="icons">
+                <div class="line">
+
+                </div>
+                <div>
+                  <div *ngFor="let item of tasks_icons" class="tasks_icon" style="background:{{item.color}}">
+                    <i  class="material-icons" >
+                     {{item.icon}}
+                   </i>
+                  </div>
+                </div>
 
               </div>
               <div class="visiting">
                 <div class="users_visiting">
-                  <p class="p_1">Alexandra Jones added a new project Flat iOS UI Kit</p>
+                  <div class="text">
+                    <p class="p_1">Alexandra Jones </p>
+                    <p class="p_2">added a new project</p>
+                    <p class="p_1"> Flat iOS UI Kit</p>
+                  </div>
                   <div class="schedule">
                     <i  class="material-icons" >
                    schedule
@@ -103,7 +101,10 @@
                   </div>
                 </div>
                 <div class="users_visiting">
-                  <p class="p_1">Sierra Dickinson is now following you.</p>
+                  <div class="text">
+                  <p class="p_1">Sierra Dickinson</p>
+                   <p class="p_2">is now following you.</p>
+                  </div>
                   <div class="schedule">
                     <i  class="material-icons" >
                    schedule
@@ -114,7 +115,11 @@
                   </div>
                 </div>
                 <div class="users_visiting">
-                  <p class="p_1">Olivia Kelly deleted project IBM</p>
+                  <div class="text">
+                  <p class="p_1">Olivia Kelly</p>
+                  <p class="p_2">deleted project
+                  <p class="p_1"> IBM</p>
+                  </div>
                   <div class="schedule">
                     <i  class="material-icons" >
                    schedule
@@ -125,10 +130,14 @@
                   </div>
                 </div>
                 <div class="tasks_last">
-                  <p class="p_1">Allison Faber commented yourproject Flat UI Kit</p>
+                  <div class="text">
+                  <p class="p_1">Allison Faber</p>
+                  <p class="p_2">commented your project</p>
+                  <p class="p_1">Flat UI Kit</p>
+                  </div>
                   <div class="tasks_p">
                     <div *ngFor="let item of tasks_photo" class="photo">
-                      <img class="im" src="/assets/img/{{item}}"/>
+                      <img src="/assets/img/{{item}}"/>
                     </div>
                   </div>
                   <div class="schedule">

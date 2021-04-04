@@ -15,6 +15,12 @@ export class SamplePageOneComponent implements OnInit {
   ];
   tasks_photo=[
     'tasks_1.png','tasks_2.png','tasks_3.png','tasks_4.png','tasks_5.png'
+  ];
+  tasks_icons=[
+    {icon:'add',color:'#88c057'},
+    {icon:'done',color:'#9777a8'},
+    {icon:'close',color:'#ed7161'},
+    {icon:'message',color:'#48a0dc'}
   ]
   constructor() { }
 
