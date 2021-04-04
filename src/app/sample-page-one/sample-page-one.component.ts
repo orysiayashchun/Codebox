@@ -21,6 +21,9 @@ export class SamplePageOneComponent implements OnInit {
     {icon:'done',color:'#9777a8'},
     {icon:'close',color:'#ed7161'},
     {icon:'message',color:'#48a0dc'}
+  ];
+  activity_photo=[
+    'activity_1.png','activity_2.png','activity_3.png','activity_4.png'
   ]
   constructor() { }
 
