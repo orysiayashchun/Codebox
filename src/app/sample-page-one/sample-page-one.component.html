@@ -157,6 +157,18 @@
               <p>Activity</p>
               <button>16</button>
             </div>
+            <div *ngIf="isClicked" class="delete_message">
+              <div class="message">
+                <p>10 members update their activies.</p>
+                <div class="icon">
+                  <i *ngIf="isClicked" (click)="toggleCollapse()" class="material-icons" >
+                 close
+                </i>
+                </div>
+              </div>
+
+
+            </div>
             <div class="users_activity">
               <div class="photo">
                 <div class="line">
@@ -168,6 +180,7 @@
                 </div>
               </div>
               <div class="about_users">
+
                 <div class="text_about_users" >
                   <div class="text">
                     <p class="p_1">Louis Elliot </p>
@@ -209,14 +222,19 @@
               </div>
             </div>
           </div>
+
+
+        </div>
         </div>
       </div>
+
       <div class="mdc-layout-grid__inner-4">
         <div class="grid_3">
           <div class="services">
           </div>
         </div>
       </div>
+
       <div class="mdc-layout-grid__inner-5">
         <div class="grid_4">
           <div class="responsive_table">

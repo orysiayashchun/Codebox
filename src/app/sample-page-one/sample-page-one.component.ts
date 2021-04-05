@@ -24,7 +24,11 @@ export class SamplePageOneComponent implements OnInit {
   ];
   activity_photo=[
     'activity_1.png','activity_2.png','activity_3.png','activity_4.png'
-  ]
+  ];
+  isClicked:boolean=true;
+  toggleCollapse(){
+    this.isClicked=!this.isClicked;
+  }
   constructor() { }
 
   ngOnInit(): void {
