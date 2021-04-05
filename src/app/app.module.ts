@@ -15,6 +15,7 @@ import { UserComponent } from './sidebar2/user/user.component';
 import { ButtonComponent } from './sidebar2/button/button.component';
 import { TodoComponent } from './sidebar2/todo/todo.component';
 import { MembersComponent } from './sample-page-one/members/members.component';
+import { ButtonsComponent } from './sample-page-one/buttons/buttons.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { MembersComponent } from './sample-page-one/members/members.component';
     UserComponent,
     ButtonComponent,
     TodoComponent,
-    MembersComponent
+    MembersComponent,
+    ButtonsComponent
   ],
   imports: [
     BrowserModule,

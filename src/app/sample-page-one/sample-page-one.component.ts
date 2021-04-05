@@ -25,7 +25,15 @@ export class SamplePageOneComponent implements OnInit {
   activity_photo=[
     'activity_1.png','activity_2.png','activity_3.png','activity_4.png'
   ];
+  select=['Last 24 Hours','Last 48 Hours','One month ago','Three months ago']
   isClicked:boolean=true;
+  countries=[
+    {color:'#3993bb',name:'United States'},
+    {color:'#65b5c2',name:'Russia'},
+    {color:'#2e7bad',name:'Italy'},
+    {color:'#23649e',name:'Germany'},
+    {color:'#63daed',name:'Other'}
+  ]
   toggleCollapse(){
     this.isClicked=!this.isClicked;
   }
