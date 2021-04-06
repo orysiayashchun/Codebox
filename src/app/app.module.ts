@@ -16,6 +16,8 @@ import { ButtonComponent } from './sidebar2/button/button.component';
 import { TodoComponent } from './sidebar2/todo/todo.component';
 import { MembersComponent } from './sample-page-one/members/members.component';
 import { ButtonsComponent } from './sample-page-one/buttons/buttons.component';
+import { MyChartOneComponent } from './sample-page-one/my-chart-one/my-chart-one.component';
+import { StatisticsComponent } from './sample-page-one/statistics/statistics.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { ButtonsComponent } from './sample-page-one/buttons/buttons.component';
     ButtonComponent,
     TodoComponent,
     MembersComponent,
-    ButtonsComponent
+    ButtonsComponent,
+    MyChartOneComponent,
+    StatisticsComponent
   ],
   imports: [
     BrowserModule,
