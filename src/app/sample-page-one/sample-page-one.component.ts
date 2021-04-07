@@ -33,7 +33,12 @@ export class SamplePageOneComponent implements OnInit {
     {color:'#2e7bad',name:'Italy'},
     {color:'#23649e',name:'Germany'},
     {color:'#63daed',name:'Other'}
-  ]
+  ];
+  progres=[
+    {color:'#90abe3',width:'60%',text:'Consulting'},
+    {color:'#8db987',width:'40%',text:'Online tutorials'},
+    {color:'#dcc2f1',width:'30%',text:'EDU management'}
+  ];
   toggleCollapse(){
     this.isClicked=!this.isClicked;
   }

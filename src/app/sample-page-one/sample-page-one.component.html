@@ -260,9 +260,39 @@
   <div class="mdc-layout-grid__inner-4">
     <div class="grid_3">
       <div class="services">
+        <div class="graph_3">
+          <div class="head">
+            <p class="p_1">Managed Services</p>
+            <p class="p_2">Service report of this year (updated 1 hour ago)</p>
+          </div>
+        </div>
+        <div class="reports">
+          <div class="head">
+            <p class="p_1">Reports</p>
+          </div>
+          <div class="progress_bar">
+            <app-progress
+            *ngFor="let progress of progres"
+            [progres]="progress"
+            ></app-progress>
+          </div>
+          <div class="tex">
+            <div class="text">
+              <p>Lorem ipsum dolor sit amet, consect</p>
+              </div>
+              <div class="text">
+              <p>adipisicing elit, sed do eiusmod por</p>
+              </div>
+              <div class="text">
+              <p>incididunt ut labore et dolore </p>
+              </div>
+          </div>
+
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  <!-- </div> -->
   <div class="mdc-layout-grid__inner-5">
 
     <div class="grid_4">
