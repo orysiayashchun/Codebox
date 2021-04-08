@@ -40,6 +40,23 @@ export class SamplePageOneComponent implements OnInit {
     {color:'#8db987',width:'40%',text:'Online tutorials'},
     {color:'#dcc2f1',width:'30%',text:'EDU management'}
   ];
+  users=[
+    {background:'#f9f9f9',check:'20',photo:'table_1.png',
+    name:'Shaunta Pollan',task:'Sketch out new idea for promote Great App',
+    date:'Jul 25, 2015',status:'Done',color:'#0072bc'},
+    {background:'#fff',check:'21',photo:'table_2.png',
+    name:'Ronald Reck',task:'Create Design based on promotional page for Getz Pay',
+    date:'Jul 25, 2015',status:'Ongoing',color:'#ffc700'},
+    {background:'#f9f9f9',check:'22',photo:'table_3.png',
+    name:'Kristine Spindler',task:'Design responsive template for Online Shop',
+    date:'Jul 25, 2015',status:'In Review',color:'#8bc34a'},
+    {background:'#fff',check:'23',photo:'table_4.png',
+    name:'Randolph Seckman',task:'Side bar enhancement for Merchant Panel ',
+    date:'Jul 25, 2015',status:'Pending',color:'#a767dd'},
+    {background:'#f9f9f9',check:'24',photo:'table_5.png',
+    name:'Bailey Angell',task:'Plan for team building activity QII ',
+    date:'Jul 25, 2015',status:'Removed',color:'#e92020'}
+  ];
   toggleCollapse(){
     this.isClicked=!this.isClicked;
   }

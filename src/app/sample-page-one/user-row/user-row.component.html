@@ -1,0 +1,26 @@
+<div class="row" style="background:{{user.background}}">
+  <div class="checkbox">
+   <input  class="checkbox__input"
+      type="checkbox" id="checkbox_{{user.check}}"/>
+    <label class="checkbox__label" for="checkbox_{{user.check}}">
+    </label>
+  </div>
+  <img class="im"  src="/assets/img/{{user.photo}}"/>
+  <p class="name">{{user.name}}</p>
+  <p class="task">{{user.task}}</p>
+  <p class="date">{{user.date}}</p>
+  <button class="status" style="background:{{user.color}}">{{user.status}}</button>
+  <div class="but">
+    <button class="edit_delete">
+      <i  class="material-icons">
+       edit
+     </i>
+   </button>
+    <button class="edit_delete">
+      <i  class="material-icons">
+       delete
+     </i>
+   </button>
+  </div>
+
+</div>

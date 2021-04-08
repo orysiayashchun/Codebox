@@ -19,6 +19,7 @@ import { ButtonsComponent } from './sample-page-one/buttons/buttons.component';
 import { MyChartOneComponent } from './sample-page-one/my-chart-one/my-chart-one.component';
 import { StatisticsComponent } from './sample-page-one/statistics/statistics.component';
 import { ProgressComponent } from './sample-page-one/progress/progress.component';
+import { UserRowComponent } from './sample-page-one/user-row/user-row.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ProgressComponent } from './sample-page-one/progress/progress.component
     ButtonsComponent,
     MyChartOneComponent,
     StatisticsComponent,
-    ProgressComponent
+    ProgressComponent,
+    UserRowComponent
   ],
   imports: [
     BrowserModule,

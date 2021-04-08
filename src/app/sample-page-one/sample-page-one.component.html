@@ -286,8 +286,7 @@
               <div class="text">
               <p>incididunt ut labore et dolore </p>
               </div>
-          </div>
-
+            </div>
           </div>
         </div>
       </div>
@@ -315,11 +314,51 @@
                 <option select value="{{select_2[3]}}">{{select_2[3]}}
               </select>
             </div>
+            <button>Apply</button>
           </div>
           <div class="head_last">
             <div class="search">
               <input value="Search" />
               <button>Go</button>
+            </div>
+          </div>
+        </div>
+        <div class="title">
+          <p style="padding-left:18.5%">NAME</p>
+          <p>TASK</p>
+          <p>DATE</p>
+          <p style="padding-left:8%">STATUS</p>
+          <p style="padding-left:3%">ACTION</p>
+        </div>
+        <div class="content">
+          <app-user-row
+            *ngFor="let user of users"
+            [user]="user"
+          ></app-user-row>
+        </div>
+        <div class="last_row">
+          <p>Showing 20-30 of 50 items</p>
+          <div class="pages">
+            <div class="page">
+              <p>1</p>
+            </div>
+            <div class="page">
+              <p>1</p>
+            </div>
+            <div class="page">
+              <p>2</p>
+            </div>
+            <div class="page">
+              <p>3</p>
+            </div>
+            <div class="page">
+              <p>4</p>
+            </div>
+            <div class="page">
+              <p>5</p>
+            </div>
+            <div class="page" style="border-right:0.5px solid #e1e1e1;">
+              <p>1</p>
             </div>
           </div>
         </div>
