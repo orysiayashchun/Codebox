@@ -9,6 +9,10 @@ export class UserRowComponent implements OnInit {
 
   constructor() { }
   @Input() user;
+  isDeleted:boolean=true;
+  deleteRow(){
+    this.isDeleted=!this.isDeleted;
+  }
   ngOnInit(): void {
   }
 

@@ -1,23 +1,12 @@
 <app-header></app-header>
-<!--<div class="page-content-container" style="
-margin-top: 43.5px;
-margin-left: 150px;">
-  <app-sample-page-one></app-sample-page-one>
-</div>-->
-
-<app-sidebar2></app-sidebar2>
-
+<div class="main">
+  <app-sidebar></app-sidebar>
+<div style="height:100%;background:#fff;">
+  <app-sidebar2></app-sidebar2>
+</div>
+  <div class="page-contant-container" style="margin-top:43.5px;
+  margin-left:150px;
+  margin-right:170px;">
   <router-outlet></router-outlet>
-
-
-
-  <!--<div class="page-container">-->
-
-  <!--<app-sidebar></app-sidebar>-->
-<!--  <div class="page-contant-container">
-  <app-sample-page-one></app-sample-page-one>
-  <app-sample-page-two></app-sample-page-two>
-  <app-sample-page-three></app-sample-page-three>
-  <app-sample-page-four></app-sample-page-four>
-  <app-sample-page-five></app-sample-page-five>
-  </div>-->
+  </div>
+</div>

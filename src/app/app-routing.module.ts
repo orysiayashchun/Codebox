@@ -9,13 +9,12 @@ import { SamplePageFiveComponent } from './sample-page-five/sample-page-five.com
 
 
 const routes: Routes = [
-    {path: '', component:SidebarComponent, children:[
+    {path: '', component:SamplePageOneComponent},
     {path:'dashboard', component:SamplePageOneComponent},
     {path:'mailbox', component:SamplePageTwoComponent},
     {path:'calendar', component:SamplePageThreeComponent},
     {path:'pages', component:SamplePageFourComponent},
-    {path:'apps', component:SamplePageFiveComponent},
-  ]}
+    {path:'apps', component:SamplePageFiveComponent}
 ];
 
 @NgModule({

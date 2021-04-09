@@ -1,4 +1,4 @@
-<div class="row" style="background:{{user.background}}">
+<div *ngIf="isDeleted" class="row" style="background:{{user.background}}">
   <div class="checkbox">
    <input  class="checkbox__input"
       type="checkbox" id="checkbox_{{user.check}}"/>
@@ -19,7 +19,8 @@
          edit
        </i>
    </button>
-    <button class="edit_delete" style="
+    <button *ngIf="isDeleted" (click)="deleteRow()"
+      class="edit_delete" style="
       padding-top: 2px;
       padding-left: 1.5px;
       padding-bottom: 5px;">
