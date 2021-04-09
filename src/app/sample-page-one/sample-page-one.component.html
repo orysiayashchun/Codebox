@@ -291,7 +291,6 @@
         </div>
       </div>
     </div>
-  <!-- </div> -->
   <div class="mdc-layout-grid__inner-5">
 
     <div class="grid_4">
@@ -340,25 +339,17 @@
           <p>Showing 20-30 of 50 items</p>
           <div class="pages">
             <div class="page">
-              <p>1</p>
+              <i  class="material-icons" style="transform: rotate(180deg)">
+               double_arrow
+             </i>
             </div>
-            <div class="page">
-              <p>1</p>
-            </div>
-            <div class="page">
-              <p>2</p>
-            </div>
-            <div class="page">
-              <p>3</p>
-            </div>
-            <div class="page">
-              <p>4</p>
-            </div>
-            <div class="page">
-              <p>5</p>
+            <div *ngFor="let item of [].constructor(5); let i = index" class="page">
+              <div class="number">{{i+1}}</div>
             </div>
             <div class="page" style="border-right:0.5px solid #e1e1e1;">
-              <p>1</p>
+              <i  class="material-icons">
+               double_arrow
+             </i>
             </div>
           </div>
         </div>

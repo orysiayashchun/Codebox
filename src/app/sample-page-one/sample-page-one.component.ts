@@ -57,6 +57,7 @@ export class SamplePageOneComponent implements OnInit {
     name:'Bailey Angell',task:'Plan for team building activity QII ',
     date:'Jul 25, 2015',status:'Removed',color:'#e92020'}
   ];
+  page_number=0;
   toggleCollapse(){
     this.isClicked=!this.isClicked;
   }
