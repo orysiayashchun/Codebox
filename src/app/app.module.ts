@@ -22,6 +22,12 @@ import { ProgressComponent } from './sample-page-one/progress/progress.component
 import { UserRowComponent } from './sample-page-one/user-row/user-row.component';
 import { MyChartTwoComponent } from './sample-page-one/my-chart-two/my-chart-two.component';
 import { MenuComponent } from './menu/menu.component';
+import { SamplePageSixComponent } from './sample-page-six/sample-page-six.component';
+import { SamplePageSevenComponent } from './sample-page-seven/sample-page-seven.component';
+import { SamplePageEightComponent } from './sample-page-eight/sample-page-eight.component';
+import { SamplePageNineComponent } from './sample-page-nine/sample-page-nine.component';
+import { SamplePageTenComponent } from './sample-page-ten/sample-page-ten.component';
+import { SamplePageElevenComponent } from './sample-page-eleven/sample-page-eleven.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +51,13 @@ import { MenuComponent } from './menu/menu.component';
     ProgressComponent,
     UserRowComponent,
     MyChartTwoComponent,
-    MenuComponent
+    MenuComponent,
+    SamplePageSixComponent,
+    SamplePageSevenComponent,
+    SamplePageEightComponent,
+    SamplePageNineComponent,
+    SamplePageTenComponent,
+    SamplePageElevenComponent
   ],
   imports: [
     BrowserModule,
