@@ -1,21 +1,17 @@
 <div class="header">
   <div class="head_first">
-     <a class="mdl-navigation__link" href="#">
-       <i  class="material-icons" >
-        {{icons[0]}}
-      </i>
-    </a>
-    <a class="mdl-navigation__link" href="#">
-      <i class="material-icons">
-        {{icons[1]}}
-      </i>
-    </a>
+     <i  class="material-icons" >
+      {{icons[0]}}
+    </i>
+    <i class="material-icons">
+      {{icons[1]}}
+    </i>
     <app-select
     style="width:47px;"
     *ngFor="let s of selects"
     [s]="s"
-    ></app-select>
-
+    >
+  </app-select>
     <div  class="radius">
        <input type="text" id="text" placeholder="Search projects.....">
         <i class="material-icons">{{icons[2]}}</i>
@@ -28,21 +24,17 @@
     [s]="s"
     ></app-select>
     <div class="head_icon">
-      <a class="mdl-navigation__link" href="#">
-        <i class="material-icons" >
-         {{icons[3]}}
-       </i>
-     </a>
+      <i class="material-icons" >
+       {{icons[3]}}
+     </i>
      <div class="call">
         <p>5</p>
      </div>
     </div>
     <div class="head_icon">
-      <a class="mdl-navigation__link" href="#">
-        <i class="material-icons">
-          {{icons[4]}}
-        </i>
-      </a>
+      <i class="material-icons">
+        {{icons[4]}}
+      </i>
       <div class="call">
          <p>2</p>
     </div>
@@ -56,6 +48,5 @@
         <embed class="im " src="/assets/img/avar_1.svg" alt="myImage">
        <div class="call"></div>
     </div>
-
   </div>
 </div>

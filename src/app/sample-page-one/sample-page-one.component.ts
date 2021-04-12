@@ -61,6 +61,17 @@ export class SamplePageOneComponent implements OnInit {
   toggleCollapse(){
     this.isClicked=!this.isClicked;
   }
+  status=[
+    {text:'Removed',color:'#e92020'},
+    {text:'Pending',color:'#a767dd'},
+    {text:'In Review',color:'#8bc34a'},
+    {text:'Ongoing',color:'##ffc700'},
+    {text:'Done',color:'#0072bc'}
+  ];
+  editStatus(user){
+    user.status=this.status[0].text;
+    user.color=this.status[0].color;
+  }
   // public canvas:any;
   // public ctx:any;
   // public labels:any=['0', '27', '60', '75','90', '110', '123', '140','155','170','185','225','250'];

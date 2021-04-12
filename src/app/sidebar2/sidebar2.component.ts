@@ -40,7 +40,11 @@ export class Sidebar2Component implements OnInit {
         element.isClickOnIcon=false;
     });
     }
+    countOfChanged(){
+      this.numberOfChecked++;
+      console.log(this.numberOfChecked);
 
+    }
   ngOnInit(): void {
   }
 

@@ -13,6 +13,7 @@ export class UserRowComponent implements OnInit {
   deleteRow(){
     this.isDeleted=!this.isDeleted;
   }
+
   ngOnInit(): void {
   }
 
