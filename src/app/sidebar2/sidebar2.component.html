@@ -1,57 +1,51 @@
 <div id="sidebar2">
   <div class="head">
-      <div class="item_1">
-        <a class="mdl-navigation__link" href="#">
-          <i class="material-icons ">{{icons[0]}}
-          </i>
-        </a>
-      </div>
-      <div class="item_1">
-        <a class="mdl-navigation__link" href="#">
-          <i class="material-icons">{{icons[1]}}
-          </i>
-        </a>
-      </div>
-      <div class="item_1">
-        <a class="mdl-navigation__link" href="#">
-          <i class="material-icons">{{icons[2]}}
-          </i>
-        </a>
-      </div>
+    <div  *ngFor="let item of icons" (click)="clickOnIcon(item)" class="item_1">
+      <i   class="material-icons ">{{item.name}}
+      </i>
+    </div>
    </div>
-   <div class="cont_1">
-     <p>Who to follow</p>
-        <div class="users">
-          <ul>
-            <app-user
-              *ngFor="let user of users"
-              [user]="user"
-            ></app-user>
-            <app-button></app-button>
-          </ul>
-        </div>
-   </div>
-   <div class="cont_2">
-     <p class="p_1">Todo list</p>
-     <p class="p_2">{{numberOfChecked}} of 5 remaining</p>
-     <div class="box">
-       <ul>
-         <app-todo
-         *ngFor="let toDo of toDoList"
-         [toDo]="toDo"
-         ></app-todo>
-         <div *ngIf="!isAdded" class="checkbox">
-          <input class="checkbox__input"
-             type="checkbox" id="checkbox_6"/>
-           <label class="checkbox__label" for="checkbox_6">{{currentVal}}
-           </label>
-           </div>
-           <div class="add_task">
-             <input value="Add new todo" #box />
-             <button *ngIf="isAdded"  (click)="getVal(box.value)">Add</button>
-             <button *ngIf="!isAdded"  (click)="getVal(box.value)">-</button>
-           </div>
-       </ul>
+   <div *ngIf="icons[0].isClickOnIcon">
+     <div  class="cont_1">
+       <p>Who to follow</p>
+          <div class="users">
+            <ul>
+              <app-user
+                *ngFor="let user of users"
+                [user]="user"
+              ></app-user>
+              <app-button></app-button>
+            </ul>
+          </div>
      </div>
+     <div class="cont_2">
+       <p class="p_1">Todo list</p>
+       <p class="p_2">{{numberOfChecked}} of 5 remaining</p>
+       <div class="box">
+         <ul>
+           <app-todo
+           *ngFor="let toDo of toDoList"
+           [toDo]="toDo"
+           ></app-todo>
+           <div *ngIf="!isAdded" class="checkbox">
+            <input class="checkbox__input"
+               type="checkbox" id="checkbox_6"/>
+             <label class="checkbox__label" for="checkbox_6">{{currentVal}}
+             </label>
+             </div>
+             <div class="add_task">
+               <input value="Add new todo" #box />
+               <button *ngIf="isAdded"  (click)="getVal(box.value)">Add</button>
+               <button *ngIf="!isAdded"  (click)="getVal(box.value)">-</button>
+             </div>
+         </ul>
+       </div>
+     </div>
+   </div>
+  <div *ngIf="icons[1].isClickOnIcon">
+   <p>Message</p>
+   </div>
+  <div *ngIf="icons[2].isClickOnIcon">
+   <p>Settings</p>
    </div>
 </div>

@@ -6,7 +6,11 @@ import { Component, OnInit,Input,} from '@angular/core';
   styleUrls: ['./sidebar2.component.less']
 })
 export class Sidebar2Component implements OnInit {
-  icons=['people_alt','question_answer','settings_applications'];
+  icons=[
+    {name:'people_alt',isClickOnIcon:true},
+    {name:'question_answer',isClickOnIcon:false},
+    {name:'settings_applications',isClickOnIcon:false}
+];
   users=[
     {photo:'avar_1.svg',state:'#39b54a',name:'Hoang Thai',prof:'Designer'},
     {photo:'avar_2.png',state:'#ee2337',name:'Mogen Polish',prof:'Writter, Editor'},
@@ -22,7 +26,6 @@ export class Sidebar2Component implements OnInit {
   //@ViewChild(TodoComponent)
   //numberOfChecked=0: TodoComponent;
   isAdded:boolean=true;
-
   numberOfChecked=0;
   currentVal="";
   getVal(val){
@@ -30,6 +33,14 @@ export class Sidebar2Component implements OnInit {
     this.currentVal=val;
     this.isAdded=!this.isAdded;
   }
+  clickOnIcon(item){
+    item.isClickOnIcon=!item.isClickOnIcon;
+    this.icons.forEach(element => {
+      if(element.name!=item.name)
+        element.isClickOnIcon=false;
+    });
+    }
+
   ngOnInit(): void {
   }
 
