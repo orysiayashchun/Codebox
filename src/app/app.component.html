@@ -1,13 +1,18 @@
 <app-header></app-header>
+<button (click)="toggleSidebar()" >
+  <i  class="material-icons" >
+   format_indent_decrease
+ </i>
+</button>
 <div class="main">
-  <app-sidebar></app-sidebar>
-<div style="height:100%;background:#fff;">
-  <app-sidebar2></app-sidebar2>
-</div>
-  <div class="page-contant-container" style="margin-top:43.5px;
-  margin-left:150px;
-  margin-right:170px;
-  background-color: #f0f3f4;">
-  <router-outlet></router-outlet>
+  <app-sidebar *ngIf="showMe"></app-sidebar>
+  <div style="height:100%;background:#fff;display:flex">
+    <div class="page-contant-container" style="margin-top:43.5px;
+    margin-left:{{margin}};
+    background-color: #f0f3f4;
+    width:100%;">
+    <router-outlet></router-outlet>
+    </div>
+      <app-sidebar2></app-sidebar2>
   </div>
 </div>

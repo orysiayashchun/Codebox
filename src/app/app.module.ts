@@ -61,7 +61,8 @@ import { SamplePageElevenComponent } from './sample-page-eleven/sample-page-elev
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    //AppComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
