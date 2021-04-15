@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Chart } from 'node_modules/chart.js';
+import { Chart } from 'chart.js';
 @Component({
   selector: 'app-my-chart-two',
   templateUrl: './my-chart-two.component.html',
@@ -13,7 +13,9 @@ export class MyChartTwoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log("dfg");
     this.createChartTwo(this.labels,this.dataCases,'myChart_2');
+    console.log("dfhj");
   }
   private createChartTwo(labels,dataCases,chartId){
     this.canvas=document.getElementById(chartId);
@@ -30,7 +32,7 @@ export class MyChartTwoComponent implements OnInit {
           fill:false,
           borderWidth:2
         }]
-      },
+      }
 
       // options:{
       //   title:{
@@ -45,8 +47,7 @@ export class MyChartTwoComponent implements OnInit {
       //     mode:'nearest',
       //     intersect:true
       //
-      //   }
-      // }
+
     });
   }
 }

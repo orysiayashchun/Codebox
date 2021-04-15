@@ -51,7 +51,8 @@
         </div>
         <div class="mdc-layout-grid__inner-6">
           <div class="graph_1">
-
+            <app-my-chart-one></app-my-chart-one>
+            <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
           </div>
           <div class="countries">
             <div *ngFor="let item of countries" class="country">
@@ -71,7 +72,10 @@
           </div>
 
           <div class="graf_2">
-            <!-- <app-my-chart-two></app-my-chart-two>-->
+            <div >
+              <!-- <app-my-chart-two></app-my-chart-two>  -->
+            </div>
+
           </div>
           <div class="statist">
             <app-statistics></app-statistics>

@@ -1,14 +1,16 @@
 
   <div class="header">
-
-
     <div class="head_first">
        <i  class="material-icons" >
         {{icons[0]}}
       </i>
-      <i class="material-icons">
-        {{icons[1]}}
-      </i>
+      <div>
+        <i  (click)="personIconClick()" class="material-icons">
+          {{icons[1]}}
+        </i>
+
+      </div>
+
       <app-select
       style="width:47px;"
       *ngFor="let s of selects"
@@ -27,18 +29,18 @@
       [s]="s"
       ></app-select>
       <div class="head_icon">
-        <i class="material-icons" >
+        <i (click)="calendarIconClick()"class="material-icons" >
          {{icons[3]}}
        </i>
-       <div class="call">
+       <div *ngIf="isCallOne" class="call">
           <p>5</p>
        </div>
       </div>
       <div class="head_icon">
-        <i class="material-icons">
+        <i (click)="callIconClick()" class="material-icons">
           {{icons[4]}}
         </i>
-        <div class="call">
+        <div *ngIf="isCallTwo" class="call">
            <p>2</p>
       </div>
      </div>
@@ -51,5 +53,20 @@
           <embed class="im " src="/assets/img/avar_1.svg" alt="myImage">
          <div class="call"></div>
       </div>
+    </div>
+  </div>
+  <div *ngIf="!isPersonIconClicked" class="person">
+    <div class="date">
+      <p>No new people</p>
+    </div>
+  </div>
+  <div *ngIf="!isCalenderIconClicked" class="call_click">
+    <div *ngFor="let item of date" class="date">
+      <p>{{item}}</p>
+    </div>
+  </div>
+  <div *ngIf="!isCallIconClicked" class="calender_click">
+    <div *ngFor="let item of call" class="date">
+      <p>{{item}}</p>
     </div>
   </div>

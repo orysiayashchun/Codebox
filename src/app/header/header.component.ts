@@ -16,7 +16,29 @@ export class HeaderComponent implements OnInit {
   ];
   users=[
     {select1: 'Hoand.Thai',select2:'Mogen Polish',select3:'Amella Neslon', select4:'Aaron Page'}
-  ]
+  ];
+  isCallOne:boolean=true;
+  date=[
+    '19/04/2021','20/04/2021','25/04/2021','01/05/2021','02/05/2021'
+  ];
+  call=[
+    'First','Second'
+  ];
+  isCallTwo:boolean=true;
+  isPersonIconClicked:boolean=true;
+  isCalenderIconClicked:boolean=true;
+  isCallIconClicked:boolean=true;
+  personIconClick(){
+    this.isPersonIconClicked=!this.isPersonIconClicked;
+  }
+  calendarIconClick(){
+    this.isCalenderIconClicked=!this.isCalenderIconClicked;
+    this.isCallOne=!this.isCallOne;
+  }
+  callIconClick(){
+    this.isCallIconClicked=!this.isCallIconClicked;
+    this.isCallTwo=!this.isCallTwo;
+  }
   constructor() { }
   ngOnInit(): void {
   }

@@ -28,6 +28,8 @@ import { SamplePageEightComponent } from './sample-page-eight/sample-page-eight.
 import { SamplePageNineComponent } from './sample-page-nine/sample-page-nine.component';
 import { SamplePageTenComponent } from './sample-page-ten/sample-page-ten.component';
 import { SamplePageElevenComponent } from './sample-page-eleven/sample-page-eleven.component';
+import {NgxChartsModule} from '@swimlane/ngx-charts';
+import {Chart} from 'chart.js'
 
 @NgModule({
   declarations: [
@@ -62,6 +64,7 @@ import { SamplePageElevenComponent } from './sample-page-eleven/sample-page-elev
   imports: [
     BrowserModule,
     AppRoutingModule,
+    NgxChartsModule,
     //AppComponent
   ],
   providers: [],
