@@ -102,13 +102,16 @@
           <div class="tasks">
             <div class="head">
               <p>Tasks</p>
-              <button>
-                <a class="mdl-navigation__link" href="#">
-                  <i  class="material-icons" >
-                   more_vert
-                 </i>
-               </a>
+              <button (click)="iconClick()" >
+                <i  class="material-icons" >
+                 more_vert
+               </i>
               </button>
+              <div *ngIf="isIconClick"class="icon">
+                <div class="date">
+                  <div class="p_t">Menu</div>
+                </div>
+              </div>
             </div>
             <div class="task_main">
               <div class="icons">
@@ -303,11 +306,16 @@
       <div class="responsive_table">
         <div class="head">
           <p>Responsive Table</p>
-          <button>
+          <button  (click)="iconClickSetting()">
             <i  class="material-icons" >
              settings
            </i>
           </button>
+          <div *ngIf="isSettingClick"class="icon">
+            <div class="date">
+              <div class="p_t">Settings</div>
+            </div>
+          </div>
         </div>
         <div class="next_head">
           <div class="head_first">

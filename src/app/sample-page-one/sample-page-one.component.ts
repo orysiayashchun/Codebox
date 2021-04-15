@@ -71,7 +71,15 @@ export class SamplePageOneComponent implements OnInit {
   editStatus(user){
     user.status=this.status[0].text;
     user.color=this.status[0].color;
-  }
+  };
+  isIconClick:boolean=true;
+  iconClick(){
+    this.isIconClick=!this.isIconClick;
+  };
+  isSettingClick:boolean=true;
+  iconClickSetting(){
+    this.isSettingClick=!this.isSettingClick;
+  };
   // public canvas:any;
   // public ctx:any;
   // public labels:any=['0', '27', '60', '75','90', '110', '123', '140','155','170','185','225','250'];
