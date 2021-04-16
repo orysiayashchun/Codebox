@@ -72,10 +72,7 @@
           </div>
 
           <div class="graf_2">
-            <div >
-              <!-- <app-my-chart-two></app-my-chart-two>  -->
-            </div>
-
+            <app-my-chart-two></app-my-chart-two>
           </div>
           <div class="statist">
             <app-statistics></app-statistics>
@@ -107,7 +104,7 @@
                  more_vert
                </i>
               </button>
-              <div *ngIf="isIconClick"class="icon">
+              <div *ngIf="!isIconClick"class="icon">
                 <div class="date">
                   <div class="p_t">Menu</div>
                 </div>
@@ -311,7 +308,7 @@
              settings
            </i>
           </button>
-          <div *ngIf="isSettingClick"class="icon">
+          <div *ngIf="!isSettingClick"class="icon">
             <div class="date">
               <div class="p_t">Settings</div>
             </div>

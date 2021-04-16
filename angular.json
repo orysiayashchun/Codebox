@@ -37,7 +37,7 @@
               "src/styles.less"
             ],
             "scripts": [
-              "node_modules/chart.js"
+              
             ]
           },
           "configurations": {
