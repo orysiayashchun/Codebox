@@ -29,7 +29,8 @@ import { SamplePageNineComponent } from './sample-page-nine/sample-page-nine.com
 import { SamplePageTenComponent } from './sample-page-ten/sample-page-ten.component';
 import { SamplePageElevenComponent } from './sample-page-eleven/sample-page-eleven.component';
 import {NgxChartsModule} from '@swimlane/ngx-charts';
-import {Chart} from 'chart.js'
+import {Chart} from 'chart.js';
+import { MyChartThreeComponent } from './sample-page-one/my-chart-three/my-chart-three.component'
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import {Chart} from 'chart.js'
     SamplePageEightComponent,
     SamplePageNineComponent,
     SamplePageTenComponent,
-    SamplePageElevenComponent
+    SamplePageElevenComponent,
+    MyChartThreeComponent
   ],
   imports: [
     BrowserModule,
