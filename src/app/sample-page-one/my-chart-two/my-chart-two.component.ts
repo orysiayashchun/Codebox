@@ -91,12 +91,12 @@ export class MyChartTwoComponent implements AfterViewInit {
             }
             ]
           },
-          // options:{
-          //   responsive:false,
-          //   legend:{
-          //     display:false,
-          //   },
-          // },
+          options:{
+            responsive:true,
+            // legend:{
+            //   display:false,
+            // },
+          },
     });
   }
 }

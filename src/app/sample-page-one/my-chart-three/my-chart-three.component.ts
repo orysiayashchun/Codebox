@@ -110,20 +110,21 @@ export class MyChartThreeComponent implements AfterViewInit {
             }
             ]
           },
-          //options:{
-  //   legend:{
-	// 		display:false,
-	// 	},
-	// 	scales:{
-	// 		xAxes:[
-	// 		{
-	// 			gridLines:{
-	// 				display:false
-	// 			}
-	// 		}]
-	// 	},
-  //
-	// }
+          options:{
+          //  responsive:true,
+    // legend:{
+		// 	display:false,
+		// },
+		// scales:{
+		// 	xAxes:[
+		// 	{
+		// 		gridLines:{
+		// 			display:false
+		// 		}
+		// 	}]
+		// },
+
+	}
 
     });
   }

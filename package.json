@@ -21,6 +21,7 @@
     "@angular/router": "~11.2.4",
     "@material/layout-grid": "^10.0.0",
     "@swimlane/ngx-charts": "^17.0.1",
+    "@types/chartjs": "^0.0.31",
     "chart.js": "^3.1.0",
     "gulp-less": "^4.0.1",
     "material-components-web": "^10.0.0",
