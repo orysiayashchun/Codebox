@@ -93,6 +93,12 @@ export class MyChartTwoComponent implements AfterViewInit {
           },
           options:{
             responsive:true,
+            plugins: {
+              legend: {
+                   display: false,
+
+                 }
+            }
             // legend:{
             //   display:false,
             // },

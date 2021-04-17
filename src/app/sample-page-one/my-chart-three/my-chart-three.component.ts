@@ -78,55 +78,52 @@ export class MyChartThreeComponent implements AfterViewInit {
   }
   lineChartMethod(el: ElementRef): void {
     this.lineChart = new Chart(el.nativeElement, {
-          type:'line',
-          data:{
-            labels:this.labels,
-            datasets:[{
-              data:this.dataCases,
-              pointRadius:0,
-              tension:0,
-              backgroundColor:'#8db987',
-              fill:true,
-            },
-            {
-              tension:0,
-              pointBorderWidth:0,
-              pointRadius:0,
-              data:[0,40,50,42,48,49,50,42,38,40,40,42,38,39,40,45,43,40,43,45,42,38,35,42,38,38,
-              		39,42,43,50,48,39,35,34,42,40,35,28,25,30,29,35,38,40,34,32,31,28,25,32,31,42,40,41,45,48,35,32,31,29,
-              		35,38,40,38,32,30,28,27,28,25,27,31,25,28,30,35,38,45],
-              backgroundColor:'#90abe3',
-              fill:true,
-            },
-            {
-              tension:0,
-              pointBorderWidth:0,
-              pointRadius:0,
-              data:[0,70,58,55,60,62,60,70,70,72,68,69,78,63,65,64,67,65,67,58,62,59,62,62,70,69,70,
-                		80,80,75,78,75,76,73,75,74,76,70,70,57,59,57,62,60,64,50,43,43,50,57,56,50,61,59,61,56,55,58,56,56,59,
-                		56,59,56,57,58,57,55,57,55,57,56,57,55,58,40,50,40,55],
-              backgroundColor:'#dcc2f1',
-              fill:true,
-            }
-            ]
-          },
-          options:{
-          //  responsive:true,
-    // legend:{
-		// 	display:false,
-		// },
-		// scales:{
-		// 	xAxes:[
-		// 	{
-		// 		gridLines:{
-		// 			display:false
-		// 		}
-		// 	}]
-		// },
+      type:'line',
+      data:{
+        labels:this.labels,
+        datasets:[{
+          data:this.dataCases,
+          pointRadius:0,
+          tension:0,
+          backgroundColor:'#8db987',
+          fill:true,
+        },
+        {
+          tension:0,
+          pointBorderWidth:0,
+          pointRadius:0,
+          data:[0,40,50,42,48,49,50,42,38,40,40,42,38,39,40,45,43,40,43,45,42,38,35,42,38,38,
+          		39,42,43,50,48,39,35,34,42,40,35,28,25,30,29,35,38,40,34,32,31,28,25,32,31,42,40,41,45,48,35,32,31,29,
+          		35,38,40,38,32,30,28,27,28,25,27,31,25,28,30,35,38,45],
+          backgroundColor:'#90abe3',
+          fill:true,
+        },
+        {
+          tension:0,
+          pointBorderWidth:0,
+          pointRadius:0,
+          data:[0,70,58,55,60,62,60,70,70,72,68,69,78,63,65,64,67,65,67,58,62,59,62,62,70,69,70,
+            		80,80,75,78,75,76,73,75,74,76,70,70,57,59,57,62,60,64,50,43,43,50,57,56,50,61,59,61,56,55,58,56,56,59,
+            		56,59,56,57,58,57,55,57,55,57,56,57,55,58,40,50,40,55],
+          backgroundColor:'#dcc2f1',
+          fill:true,
+        }
+        ]
+      },
+      options:{
+        scales:{
+    			x:
+    			{
+  					display:false
+    			}
+    		},
+        plugins: {
+          legend: {
+               display: false,
 
-	}
-
+             },
+           }
+        }
     });
   }
-
 }
