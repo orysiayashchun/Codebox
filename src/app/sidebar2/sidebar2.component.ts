@@ -34,10 +34,12 @@ export class Sidebar2Component implements OnInit {
     this.isAdded=!this.isAdded;
   }
   clickOnIcon(item){
-    item.isClickOnIcon=!item.isClickOnIcon;
     this.icons.forEach(element => {
       if(element.name!=item.name)
         element.isClickOnIcon=false;
+        else{
+          element.isClickOnIcon=true;
+        }
     });
     }
     countOfChanged(){
