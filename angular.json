@@ -36,9 +36,7 @@
             "styles": [
               "src/styles.less"
             ],
-            "scripts": [
-              
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -128,6 +126,10 @@
               "devServerTarget": "coursework:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
