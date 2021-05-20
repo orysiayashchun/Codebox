@@ -12,7 +12,7 @@ export class Sidebar2Component implements OnInit {
     {name:'settings_applications',isClickOnIcon:false}
 ];
   users=[
-    {photo:'avar_1.svg',state:'#39b54a',name:'Hoang Thai',prof:'Designer'},
+    {photo:'avar_1.png',state:'#39b54a',name:'Hoang Thai',prof:'Designer'},
     {photo:'avar_2.png',state:'#ee2337',name:'Mogen Polish',prof:'Writter, Editor'},
     {photo:'avar_3.png',state:'#ffc700',name:'Mogen Polish',prof:'Designer, Blogger'},
     {photo:'avar_4.png',state:'#53bf61',name:'Mogen Polish',prof:'Musician'},
