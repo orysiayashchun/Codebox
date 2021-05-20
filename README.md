@@ -1,3 +1,3 @@
 # Coursework
-- Demo-version
- `https://orysiayashchun.github.io/Codebox/`
+`Demo-version`
+ - https://orysiayashchun.github.io/Codebox/
